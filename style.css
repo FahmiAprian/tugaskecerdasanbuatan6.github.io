@@ -1,0 +1,147 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(101, 199, 89);
+}
+
+section {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  padding: 100px 200px;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  min-height: 50vh;
+  background: url(images/main.jpg);
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.main .content h3 {
+  color: rgb(255, 255, 255);
+}
+
+header {
+  z-index: 999;
+  position: fixed;
+  background: rgba(20, 240, 20, 0.308);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+header.sticky {
+  background: #615e306c;
+  padding: 15px 200px;
+}
+
+header .brand {
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation a {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+header .navigation a:hover {
+  color: #3a6cf4;
+}
+
+body {
+  min-height: 110vh;
+  justify-content: center;
+}
+
+.scrollToTop-btn {
+  z-index: 999;
+  position: fixed;
+  background: #3a6cf4;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 3px;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.scrollToTop-btn.active {
+  right: 20px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.isi {
+  color: white;
+  width: 100%;
+  padding: 10px 200px;
+}
+
+.judul1 {
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 2.2em;
+}
+
+.menu1 {
+  text-decoration: none;
+}
+
+.materi1 {
+  width: 50%;
+}
+
+.benar {
+  color: rgb(0, 0, 255);
+}
+
+.salah {
+  color: rgb(255, 0, 0);
+}
+
+.hak {
+  font-size: 15px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.hak a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(11, 178, 255);
+}
